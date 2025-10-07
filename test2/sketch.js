@@ -12,15 +12,14 @@ function draw() {
   strokeWeight(1)
   circle(mouseX, mouseY, 20);
   noFill()
+
+  //顯示小球
+  balls.forEach(ball => {
+    ball.draw();
+  });
 }
 
-/*有function就可以直接顯現效果了*/
-function draw() { 
-  background(0)
-  balls.forEach(ball => {
-    ball.draw()
-  })
-}
+//有function就可以直接顯現效果了
 
 function mouseClicked() {
   balls.push(new Ball(mouseX, mouseY, random(-5, 5), random(-5, 5)))
@@ -38,7 +37,7 @@ class Ball {
     this.x += this.speedX
     this.y += this.speedY
     this.x = (this.x + width) % width
-    this.y = (this.y + width) % height
+    this.y = (this.y + height) % height
     circle (this.x, this.y, 15)
   }
 }
