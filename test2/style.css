@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+div {
+  font-family: "Dosis", serif;
+  text-align: center;
+}
+.header {
+  font-size: 30px;
+}
+section {
+  font-family: "Dosis", serif;
+  font-size: 20px;
+  text-align: center;
+}
+.container {
+  background: none;
+  height: 50px;
+  width: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  background-color: rgb(91, 141, 124);
+}
+.menu ul li {
+  font-size: large;
+  color: white;
+  padding: 0 30px;
+  display: inline-block;
+  line-height: 50px;
+  list-style: none;
+}
+.menu ul li:hover {
+  background-color: white;
+  color: darkgoldenrod;
+}
