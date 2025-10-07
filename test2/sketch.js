@@ -13,7 +13,8 @@ function draw() {
   circle(mouseX, mouseY, 20);
   noFill()
 }
-/*function draw() { 
+
+function draw() { 
   background(0)
   balls.forEach(ball => {
     ball.draw()
@@ -39,4 +40,4 @@ class Ball {
     this.y = (this.y + width) % height
     circle (this.x, this.y, 15)
   }
-}*/
+}
