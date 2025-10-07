@@ -14,6 +14,7 @@ function draw() {
   noFill()
 }
 
+/*有function就可以直接顯現效果了*/
 function draw() { 
   background(0)
   balls.forEach(ball => {
